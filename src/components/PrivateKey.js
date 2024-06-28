@@ -4,7 +4,9 @@ import {
   Box,
   Text,
   Heading,
-  VStack
+  VStack,
+  Link,
+  Button
 } from "@chakra-ui/react";
 
 const PrivateKey = () => {
@@ -36,8 +38,13 @@ const PrivateKey = () => {
         </Box>
         <VStack spacing={4}>
           <Text fontSize="2xl" color="teal.500">
-            Birlikte geçireceğiniz her gün mutlulukla dolu olsun
+          Birlikte geçireceğiniz her gün mutlulukla dolu olsun.
           </Text>
+          <Link href="https://support.metamask.io/tr/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#importing-using-a-private-key" isExternal>
+            <Button colorScheme="teal" size="lg">
+              Private Key nasıl kullanılır?
+            </Button>
+          </Link>
         </VStack>
       </Box>
     </Container>
